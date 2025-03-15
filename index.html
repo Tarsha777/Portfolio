@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARSHA PONAKALA</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="certfications.html">Certifications & Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div id="name">
+            <h2 id="typed-text"></h2>
+            
+        </div>
+        <div id="photo">
+            <img id="pic" src="Assets/t-moms.jpg" alt="Your Photo">
+            <div class="social-icons">
+                <a href="https://instagram.com/tarsha.ponakala" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/tarsha-ponakala" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tarsha777" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-cylinder">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">SQL</div>
+                
+                <div class="skill-card">ML</div>
+                <div class="skill-card">AI</div>
+                <div class="skill-card">Data Science</div>
+                <div class="skill-card">Deep Learning</div>
+                <div class="skill-card">Communication </div>
+                <div class="skill-card">Problem Solving</div>
+                <div class="skill-card">Front-end</div>
+                <div class="skill-card">Data Sructures</div>
+                <div class="skill-card">Algorithms</div>
+                <div class="skill-card">Mongo DB</div>
+                <div class="skill-card">PHP</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">Express.js</div>
+                <div class="skill-card">React.js</div>
+                <div class="skill-card">IoT</div>
+                <div class="skill-card">Raspberry-pi</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+
+            <!-- AI-Powered Autonomous Car -->
+            <div class="project-card" 
+                data-title="AI-Powered Autonomous Car" 
+                data-description="An AI-powered self-driving car with obstacle avoidance, real-time navigation with GPS." 
+                tech-used="Raspberry Pi, Python, OpenCV, TensorFlow, GPS, IoT"
+                features="Obstacle Avoidance, Real-Time Navigation, Object Detection"
+                data-image="Assets/buzzi.jpg">
+                
+                <img src="Assets/buzzi.jpg" alt="AI Car Project"> 
+                <h3>AI-Powered Autonomous Car</h3>
+            </div>
+        
+            <!-- Shutterbug Photography Portfolio -->
+            <div class="project-card" 
+                data-title="Shutterbug Photography Portfolio"
+                data-description="A photography portfolio website featuring a responsive photo gallery for users."
+                tech-used="HTML, CSS, JavaScript"
+                features="Responsive Design, Photo Gallery"
+                data-image="Assets/sutterbug.png">
+                <img src="Assets/sutterbug.png" alt="Photography Portfolio">
+                <h3>Shutterbug Photography Portfolio</h3>
+            </div>
+        
+            <!-- Logistics Website -->
+            <div class="project-card" 
+                data-title="KRoilTransport - Oil Tanker Booking Service"
+                data-description="A web application for booking oil tankers, managing orders, and tracking deliveries."
+                tech-used="HTML, CSS, JavaScript, PHP, MySQL"
+                features="Order Management, Delivery Tracking, User Authentication"
+                data-image="Assets/kroil.png">
+                <img src="Assets/kroil.png" alt="Oil Transport">
+                <h3>KRoilTransport - Oil Tanker Booking Service</h3>
+            </div>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        </div>
+        
+            
+        </div>
+        
+        <!-- Modal (Initially Hidden) 
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close-btn">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div> -->
+        
+    </section>
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>AI-Powered Autonomous Car</h2>
+                <img src="Assets/buzzi.jpg" alt="AI Autonomous Car">
+               
+                <p><strong>Technologies Used:</strong> Raspberry Pi, OpenCV, TensorFlow, GPS, IoT</p>
+                <p><strong>Features:</strong> Obstacle Avoidance, Real-Time Navigation, Remote Control</p>
+                <p><strong>Challenges Solved:</strong> Efficient routing, reducing manual control, real-time decision-making</p>
+            </div>
+        </div> 
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Shutterbug Photography Portfolio Website</h2>
+                <!--<img src="ferrari.jpg" alt="AI Autonomous Car">-->
+               
+                <p><strong>Technologies Used:</strong> HTML,CSS,JavaScript</p>
+                <p><strong>Features:</strong> Resposive photo gallery for users.</p>
+                <p><strong>Challenges Solved:</strong> Improving user engagement by making the photogallery Resposive.</p>
+            </div>
+        </div> 
+
+    
+     
+
+    <section id="contact">
+        
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="name"></label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="email"></label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <label for="message"></label>
+            </div>
+            <button id="submit">Send Message</button>
+            <div id="form-message"></div>
+        </form>
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:ptst2005@gmail.com" target="_blank">ptst2005@gmail.com</a><br>
+           LinkedIn: <a href="https://www.linkedin.com/in/tarsha-ponakala" target="_blank">Tarsha Ponakala</a>
+        </p>
+    </section>
+    
+    <script>
+        // ... (rest of your JavaScript code) ...
+    
+        // Interactive Contact Form
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            const formMessage = document.getElementById("form-message");
+    
+            // Basic validation (you can add more robust validation)
+            if (!name || !email || !message) {
+                formMessage.textContent = "Please fill in all fields.";
+                formMessage.className = "error-message";
+                return;
+            }
+    
+            // Simulate sending a message (replace with actual backend logic)
+            setTimeout(() => {
+                formMessage.textContent = "Message sent successfully!";
+                formMessage.className = "success-message";
+                document.getElementById("contact-form").reset(); // Clear the form
+            }, 1000); // Simulate a 1-second delay
+        });
+    </script>
+
+
+    <script>
+        // Theme Toggle
+        
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+        // Typing Effect
+        const text = "Hi! I'm Tarsha Ponakala";
+        let i = 0;
+        function typeEffect() {
+    document.getElementById("typed-text").innerHTML = ""; // Reset before typing
+    let i = 0;
+    function typing() {
+        if (i < text.length) {
+            setTimeout(150);
+            document.getElementById("typed-text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 150);
+            
+        }
+    }
+    typing();
+}
+
+        window.onload = typeEffect;
+
+        
+        // Contact Form Submission
+        document.getElementById("contact-form").addEventListener("submit", function(event){
+            event.preventDefault();
+            alert("Message Sent!");
+        });
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("dark-mode-toggle");
+    
+        toggleButton.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+    });
+</script>   
+<script>
+// Modal functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const projectCards = document.querySelectorAll(".project-card");
+    const modal = document.getElementById("projectModal");
+    const modalContent = document.querySelector("#projectModal .modal-content");
+
+    projectCards.forEach(card => {
+        card.addEventListener("click", function () {
+            const title = this.getAttribute("data-title");
+            const description = this.getAttribute("data-description");
+            const techUsed = this.getAttribute("tech-used");
+            const features = this.getAttribute("features");
+            const image = this.getAttribute("data-image");
+            
+
+            modalContent.innerHTML = `
+                <span id="closeModal" class="close-btn">&times;</span>
+                <h2>${title}</h2>
+                <img src="${image}" alt="${title}" style="max-width: 100%; border-radius: 10px;">
+                <p><strong>Description:</strong> ${description}</p>
+                <p><strong>Technologies Used:</strong> ${techUsed}</p>
+                <p><strong>Features:</strong> ${features}</p>
+        
+            `;
+
+            modal.style.display = "flex";
+        });
+    });
+
+    // Close modal when clicking the close button or outside the modal
+    modalContent.addEventListener("click", function (event) {
+        if (event.target.id === "closeModal") {
+            closeModal();
+        }
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        modal.style.display = "none";
+        modalContent.innerHTML = ""; // Clears modal content to stop video playback
+    }
+});
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const text = "Hi, I'm TARSHA SIVA TEJA !"; // Change to your actual name
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 50); // Adjust speed as needed
+            }
+        }
+        typeEffect();
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
