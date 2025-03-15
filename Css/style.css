@@ -403,7 +403,7 @@ nav ul li a:hover {
 /* Ensure space below the navbar */
 #name {
     font-family: monospace;
-    font-size: 24px;
+    font-size: 30px;
     white-space: pre-wrap;
     overflow: hidden;
     display: inline-block;
@@ -412,7 +412,7 @@ nav ul li a:hover {
     max-width: 100%;
     word-wrap: break-word;
     text-align: center;
-    margin-top: 80px; /* Adjust based on navbar height */
+    margin-top: 10vh; /* Adjust based on navbar height */
 }
 
 /* Adjust for mobile */
