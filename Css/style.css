@@ -214,30 +214,72 @@ nav {
     width: 100%;
 }*/
 nav {
+    font-family: monospace;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
-    backdrop-filter: blur(10px);  /* Apply the blur effect */
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Make sure it stays above other elements */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-nav ul li a {
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Hide menu button on larger screens */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
 
 
 .form-group input:focus ~ label,
@@ -358,18 +400,31 @@ nav ul li a:hover {
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+/* Ensure space below the navbar */
 #name {
-    font-family:  monospace;
+    font-family: monospace;
     font-size: 24px;
     white-space: pre-wrap;
     overflow: hidden;
-    
     display: inline-block;
-    font-weight:normal; /* Reduce boldness */
+    font-weight: normal;
     line-height: 1;
-   
-    
+    max-width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 80px; /* Adjust based on navbar height */
 }
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    #name {
+        font-size: 18px;
+        margin-top: 70px; /* Adjust based on smaller navbar height */
+    }
+}
+
+
+
 
 
 #projects {

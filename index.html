@@ -13,6 +13,8 @@
     
 
     <nav>
+        
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -177,6 +179,10 @@
     </section>
     
     <script>
+        function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+
         // ... (rest of your JavaScript code) ...
     
         // Interactive Contact Form
@@ -298,18 +304,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const text = "Hi, I'm TARSHA SIVA TEJA !"; // Change to your actual name
-        let index = 0;
-        function typeEffect() {
-            if (index < text.length) {
-                document.getElementById("typed-text").textContent += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 50); // Adjust speed as needed
-            }
-        }
-        typeEffect();
-    });
+   const nameElement = document.getElementById("name");
+const nameText = "Hi, I'm Tarsha Siva Teja"; // Replace with your name
+let index = 0;
+const typingSpeed = window.innerWidth < 768 ? 100 : 150; // Adjust speed for mobile
+
+function typeEffect() {
+    if (index < nameText.length) {
+        nameElement.textContent += nameText.charAt(index);
+        index++;
+        setTimeout(typeEffect, typingSpeed);
+    }
+}
+
+window.onload = () => {
+    nameElement.textContent = "";
+    typeEffect();
+};
+
 </script>
 
 
